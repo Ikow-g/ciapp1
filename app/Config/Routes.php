@@ -39,6 +39,9 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/pegawai', 'PegawaiController::index');
+$routes->post('pegawai/simpan', 'PegawaiController::simpan');
+$routes->get('pegawai/edit', 'pegawaiController::edit');
+$routes->get('pegawai/hapus','PegawaiController::hapus');
 
 /*
  * --------------------------------------------------------------------
